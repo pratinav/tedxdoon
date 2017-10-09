@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" id="{{ page.name }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{% if page.title != null %}{{ page.title }} &mdash; {% endif %}{{ site.title }}</title>
+        <meta name="description" content={% if page.description == null %} "{{ site.description }}" {% else %} "{{ page.description }}" {% endif %}>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="{{ site.baseurl }}/icon.png">
+
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+
+        <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content={% if page.title != null %} "{{ page.title }} &mdash; {{ site.title }}" {% else %} "{{ site.title }}" {% endif %}>
+        <meta property="og:image" content="{{ site.baseurl }}/img/logo.jpg">
+        <meta property="og:description" content={% if page.description == null %} "{{ site.description }}" {% else %} "{{ page.description }}" {% endif %}>
+        <meta property="og:site_name" content="{{ site.title }}">
+        <meta property="article:author" content="{{ site.author }}">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+        <meta name="twitter:title" content={% if page.title != null %} "{{ page.title }} &mdash; {{ site.title }}" {% else %} "{{ site.title }}" {% endif %}>
+        <meta name="twitter:description" content={% if page.description == null %} "{{ site.description }}" {% else %} "{{ page.description }}" {% endif %}>
+        <meta name="twitter:image" content="{{ site.baseurl }}/img/logo.jpg">
+    </head>
+    <body>
+        {{ content }}
+
+        <!-- <script src="{{ site.baseurl }}/js/main.js"></script> -->
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <!-- <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+    </body>
+</html>

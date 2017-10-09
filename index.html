@@ -1,0 +1,52 @@
+---
+layout: basic
+---
+<header>
+  <div class="container">
+    <a class="logo" href="{{ site.baseurl }}/">
+      <span class="tedx-logo">TEDx</span><span class="tedx-name">Youth@DoonSchool</span>
+      <div class="tedx-info">
+          <span class="ted-red">x</span> = independently organized TED event
+      </div>
+    </a>
+    <nav>
+      <a href="{{ site.baseurl }}/">Home</a>
+      <a href="{{ site.baseurl }}/speakers/">Speakers</a>
+      <a href="{{ site.baseurl }}/about/">About</a>
+      <a href="{{ site.baseurl }}/team/">Team</a>
+    </nav>
+
+    <div class="hero-intro">
+      <h1>{{ site.tagline }}</h1>
+      <h2>{{ site.eventdate }}</h2>
+    </div>
+  </div>
+</header>
+
+<section class="blurb container">
+  <p>In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called {{ site.title }}, where x = independently organized TED event. <b>{{ site.title }} will bring together some innovative, young minds and spark deep discussion and connection.</b></p>
+  <p>This independent TEDx event is operated under license from <a href="https://ted.com" class="ted-red">TED</a>.</p>
+</section>
+
+<section class="info">
+  <div class="container">
+    <b>{{ site.title }}: {{ site.tagline }}</b> will be held on {{ site.eventdate }}, at The Doon School, Dehradun
+  </div>
+</section>
+
+<section class="speakers container">
+  <h2>Speakers</h2>
+  <p>{{ site.title }} brings together a stellar range of speakers to share their ideas with the world. Learn more at the <a href="{{ site.baseurl }}/speakers/">speakers page</a>.</p>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>
+      <a href="https://facebook.com/">Facebook</a><br>
+      <a href="mailto:hello@tedxdoon.org">hello@tedxdoon.org</a>
+    </p>
+  </div>
+</section>
+
+{% include footer.html %}
