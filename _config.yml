@@ -2,12 +2,11 @@ title: TEDxYouth@DoonSchool
 tagline: Take a Moment To Think
 eventdate: November 5, 2017
 description: TEDxYouth@DoonSchool is an independently organized TED event that will bring together some innovative, young minds and spark deep discussion and connection. It will be held on November 17, 2017, at The Doon School, Dehradun
-url: ""
+permalink: /:slug/
+# url: "tedxdoon.org"
 baseurl: "/tedxdoon"
 author: Pratinav Bagla
 
-# gems:
-  # - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
