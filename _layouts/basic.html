@@ -19,7 +19,7 @@
         <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
         <meta property="og:type" content="website">
         <meta property="og:title" content={% if page.title != null %} "{{ page.title }} &mdash; {{ site.title }}" {% else %} "{{ site.title }}" {% endif %}>
-        <meta property="og:image" content="{{ site.baseurl }}/img/logo.jpg">
+        <meta property="og:image" content="{{ site.baseurl }}/img/logo_black_square.jpg">
         <meta property="og:description" content={% if page.description == null %} "{{ site.description }}" {% else %} "{{ page.description }}" {% endif %}>
         <meta property="og:site_name" content="{{ site.title }}">
         <meta property="article:author" content="{{ site.author }}">
@@ -28,7 +28,7 @@
         <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
         <meta name="twitter:title" content={% if page.title != null %} "{{ page.title }} &mdash; {{ site.title }}" {% else %} "{{ site.title }}" {% endif %}>
         <meta name="twitter:description" content={% if page.description == null %} "{{ site.description }}" {% else %} "{{ page.description }}" {% endif %}>
-        <meta name="twitter:image" content="{{ site.baseurl }}/img/logo.jpg">
+        <meta name="twitter:image" content="{{ site.baseurl }}/img/logo_black_square.jpg">
     </head>
     <body>
         {{ content }}
